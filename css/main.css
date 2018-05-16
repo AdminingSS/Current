@@ -1,28 +1,15 @@
-.bgc-border {
-    border: 1px solid;
-    background-color: #ccc;
-}
-
 .slider-arrow-left-icon {
-    background-image:url("../img/left.svg");
-    width: 40px;
-    height: 73px;
-}
+  background-image: url("../img/left.svg");
+  width: 40px;
+  height: 73px; }
 
 .slider-arrow-right-icon {
-    background-image:url("../img/right.svg");
-    width: 40px;
-    height: 73px;
-}
+  background-image: url("../img/right.svg");
+  width: 40px;
+  height: 73px; }
 
-.carousel-indicators li {
-    background:url("../img/01.svg") no-repeat;
-    height: auto;
-}
+.slider-head {
+  width: 500px;
+  height: auto; }
 
-.carousel-indicators .active {
-    background:url("../img/02.svg") no-repeat;
-    height: 30px;
-}
-
-
+/*# sourceMappingURL=main.css.map */
