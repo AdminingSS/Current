@@ -19,7 +19,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #ffffff; }
-.font-navitem .active > .nav-link {
+.font-navitem.active > .nav-link {
   color: #c7b299; }
 
 /*# sourceMappingURL=fonts.css.map */
