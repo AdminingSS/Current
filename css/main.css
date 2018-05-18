@@ -1,15 +1,42 @@
-.slider-arrow-left-icon {
-  background-image: url("../img/left.svg");
-  width: 40px;
-  height: 73px; }
-
-.slider-arrow-right-icon {
-  background-image: url("../img/right.svg");
-  width: 40px;
-  height: 73px; }
-
 .slider-head {
-  width: 500px;
-  height: auto; }
+  margin-top: -82px; }
+
+.slick-next {
+  right: 25px;
+  z-index: 1; }
+  .slick-next::before {
+    content: '';
+    display: block;
+    background: url("../img/right.svg");
+    width: 40px;
+    height: 73px; }
+
+.slick-prev {
+  left: 25px;
+  z-index: 1;
+  background-image: url("../img/left.svg"); }
+  .slick-prev::before {
+    content: '';
+    display: block;
+    background: url("../img/left.svg");
+    width: 40px;
+    height: 73px; }
+
+.nav-index {
+  z-index: 100; }
+
+.dots {
+  position: relative;
+  bottom: 100px;
+  background-color: #fff;
+  border: 1px solid #fff; }
+
+.slick-dots {
+  bottom: 25px; }
+  .slick-dots li.slick-active button:before, .slick-dots li button:before {
+    color: white; }
+
+.navbar-toggler-icon {
+  background-image: url("../img/toggler.svg"); }
 
 /*# sourceMappingURL=main.css.map */
