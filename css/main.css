@@ -42,12 +42,20 @@
 .navbar-toggler-icon {
   background-image: url("../img/toggler.svg"); }
 
-.four-cards {
-  height: 373px; }
-
 .something-gray {
   width: 1920px;
   height: 700px;
   background-color: #fbfaf8; }
+
+.content-icon-top-1 {
+  width: 50px;
+  height: 50px; }
+
+.content-icon-bottom-1 {
+  width: 70px;
+  height: 3px; }
+
+.dark-line {
+  background: url("../img/dark_line.svg"); }
 
 /*# sourceMappingURL=main.css.map */

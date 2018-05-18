@@ -28,3 +28,36 @@
       color: #c7b299;
     }
 }
+
+
+//Content 1 text block
+.content_1 {
+  //Card header text
+  .card-title {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #555555;
+    //Selected card header text
+    &.active {
+      color: #c7b299
+    }
+  }
+  //Card body text
+  .card-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #8c8c8c;
+  }
+}
