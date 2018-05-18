@@ -56,6 +56,20 @@
 .nav-index {
   z-index: 100;
 }
+//Navbar toggle button icon
+.navbar-toggler-icon {
+  background-image: url("../img/toggler.svg");
+}
+
+.four-cards {
+  height: 373px;
+}
+
+.something-gray {
+  width: 1920px;
+  height: 700px;
+  background-color: #fbfaf8;
+}
 
 //.dots {
 //  position: relative;
@@ -63,9 +77,3 @@
 //  background-color: #fff;
 //  border: 1px solid #fff;
 //}
-
-
-
-.navbar-toggler-icon {
-  background-image: url("../img/toggler.svg");
-}
