@@ -97,3 +97,105 @@
 .dark-line {
   background: url("../img/dark_line.svg");
 }
+#pills-tab {
+  .nav-link {
+    border: 1px solid #ebebeb;
+    color: #8c8c8c;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+
+    &.active {
+      background-color: #998675;
+      color: #ffffff;
+    }
+  }
+}
+
+#pills-tabContent {
+  .card-body {
+    background-color: #fbfaf8;
+  }
+  .card:hover {
+      background: #000000;
+      img {
+        opacity: 0.5;
+      }
+    .card-body {
+      background-color: #362f2d;
+      .card-title {
+        color: #ffffff;
+      }
+      .card-text {
+        color: #c7b299;
+      }
+
+    }
+  }
+}
+
+
+.content-mobile {
+  background-color: #fbfaf8;
+
+  ul {
+    list-style-image: url("../img/li-marker-1.png");
+  }
+}
+
+.content-counters {
+  background-image: linear-gradient(to right, #211b19, #4e3427);
+}
+
+#content-recent-posts {
+  .card-title {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+  }
+  .card-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c8c8c;
+  }
+
+  .card:hover {
+    background: #000000;
+    img {
+      opacity: 0.5;
+    }
+
+    .card-body {
+      background-color: #362f2d;
+      .card-title {
+        color: #c7b299;
+      }
+      .card-text {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.content-trademarks {
+  background-image: url("../img/trademarks-bg.jpg");
+  height: 489px;
+}

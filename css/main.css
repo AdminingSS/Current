@@ -61,4 +61,75 @@
 .dark-line {
   background: url("../img/dark_line.svg"); }
 
+#pills-tab .nav-link {
+  border: 1px solid #ebebeb;
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center; }
+  #pills-tab .nav-link.active {
+    background-color: #998675;
+    color: #ffffff; }
+
+#pills-tabContent .card-body {
+  background-color: #fbfaf8; }
+#pills-tabContent .card:hover {
+  background: #000000; }
+  #pills-tabContent .card:hover img {
+    opacity: 0.5; }
+  #pills-tabContent .card:hover .card-body {
+    background-color: #362f2d; }
+    #pills-tabContent .card:hover .card-body .card-title {
+      color: #ffffff; }
+    #pills-tabContent .card:hover .card-body .card-text {
+      color: #c7b299; }
+
+.content-mobile {
+  background-color: #fbfaf8; }
+  .content-mobile ul {
+    list-style-image: url("../img/li-marker-1.png"); }
+
+.content-counters {
+  background-image: linear-gradient(to right, #211b19, #4e3427); }
+
+#content-recent-posts .card-title {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #555555; }
+#content-recent-posts .card-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8c8c8c; }
+#content-recent-posts .card:hover {
+  background: #000000; }
+  #content-recent-posts .card:hover img {
+    opacity: 0.5; }
+  #content-recent-posts .card:hover .card-body {
+    background-color: #362f2d; }
+    #content-recent-posts .card:hover .card-body .card-title {
+      color: #c7b299; }
+    #content-recent-posts .card:hover .card-body .card-text {
+      color: #ffffff; }
+
+.content-trademarks {
+  background-image: url("../img/trademarks-bg.jpg");
+  height: 489px; }
+
 /*# sourceMappingURL=main.css.map */
