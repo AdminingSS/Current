@@ -31,6 +31,25 @@
   text-align: center;
   color: #ffffff; }
 
+.font-button-1 {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  width: 170px;
+  height: 53px;
+  border-radius: 3px;
+  background-color: #998675;
+  box-shadow: inset 0px -3px 0 0 #736357; }
+  .font-button-1.slider-btn {
+    margin-top: 50px; }
+
 .font-slider-btn {
   font-family: Raleway;
   font-size: 14px;
@@ -95,5 +114,51 @@
   letter-spacing: normal;
   text-align: center;
   color: #8c8c8c; }
+
+.font-grayzone-header {
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #555555; }
+
+.font-grayzone-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: center;
+  color: #8c8c8c; }
+
+.font-darkline-header {
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff; }
+  .font-darkline-header .font-custom-color-1 {
+    color: #c7b299; }
+
+.font-darkline-text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #615855; }
 
 /*# sourceMappingURL=fonts.css.map */
