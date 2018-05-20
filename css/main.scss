@@ -4,13 +4,15 @@
   z-index: 100;
 }
 .t-0 {
-  top: 0px;
+  top: 0;
 }
 
 //.test-bgi {
-//  background: url("../img/photo.jpg") no-repeat;
-//  background-size: cover;
-//  height: 600px;
+////  background: url("../img/photo.jpg") no-repeat;
+////  background-size: cover;
+////  height: 600px;
+//  mix-blend-mode: multiply;
+//  background-color: #f4f5f8;
 //}
 
 //SLIDER
@@ -66,7 +68,7 @@
 .nav-index {
   z-index: 100;
   position: absolute;
-  top:0px;
+  top:0;
 }
 //Navbar toggle button icon
 .navbar-toggler-icon {

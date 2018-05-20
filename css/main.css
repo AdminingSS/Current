@@ -2,7 +2,7 @@
   z-index: 100; }
 
 .t-0 {
-  top: 0px; }
+  top: 0; }
 
 .slick-next {
   right: 45px;
@@ -42,7 +42,7 @@
 .nav-index {
   z-index: 100;
   position: absolute;
-  top: 0px; }
+  top: 0; }
 
 .navbar-toggler-icon {
   background-image: url("../img/toggler.svg"); }
