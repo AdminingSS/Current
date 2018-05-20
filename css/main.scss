@@ -1,12 +1,22 @@
+//GLOBAL
+
+.z-100 {
+  z-index: 100;
+}
+.t-0 {
+  top: 0px;
+}
+
+//.test-bgi {
+//  background: url("../img/photo.jpg") no-repeat;
+//  background-size: cover;
+//  height: 600px;
+//}
 
 //SLIDER
-//Slider кривожопый подъём наверх
-.slider-head {
-  //margin-top: -82px;
-}
 //Right arrow placement
 .slick-next {
-  right: 25px;
+  right: 45px;
   z-index: 1;
   //Right arrow tuning
   &::before {

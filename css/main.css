@@ -1,5 +1,11 @@
+.z-100 {
+  z-index: 100; }
+
+.t-0 {
+  top: 0px; }
+
 .slick-next {
-  right: 25px;
+  right: 45px;
   z-index: 1; }
   .slick-next::before {
     content: '';

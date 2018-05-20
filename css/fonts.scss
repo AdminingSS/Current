@@ -1,3 +1,57 @@
+
+//Slider
+.font-slider-header-small {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.font-slider-header-big {
+  font-family: Raleway;
+  font-size: 52px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.font-slider-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.font-slider-btn {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  width: 170px;
+  height: 53px;
+  border-radius: 3px;
+  background-color: #998675;
+  box-shadow: inset 0px -3px 0 0 #736357;
+  margin-top: 50px;
+}
+
 //Navbar logo text
 .font-logo {
   font-family: Raleway;
@@ -31,7 +85,7 @@
 
 
 //Content 1 text block
-.content_1 {
+.font-content-1 {
   //Card header text
   .card-title {
     font-family: Raleway;
