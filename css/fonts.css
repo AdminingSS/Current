@@ -165,4 +165,109 @@
   text-align: left;
   color: #d1d1d1; }
 
+.font-content-counters-header {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.75;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff; }
+
+.font-content-counters-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #c7b299; }
+
+.font-footer-main-header {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff; }
+
+.font-footer-main-text-1 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #555555; }
+
+.font-footer-main-text-2 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #d1d1d1; }
+
+.font-footer-main-text-3 {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #363636; }
+
+.font-footer-main-text-4 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #555555; }
+
+.font-footer-main-text-5 {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff; }
+
+.font-footer-main-text-6 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #c7b299; }
+
+.font-footer-link-1 {
+  color: #00bff3; }
+
+.font-footer-link-2 {
+  color: #959595; }
+
 /*# sourceMappingURL=fonts.css.map */
