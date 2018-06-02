@@ -75,7 +75,17 @@
   background-image: url("../img/toggler.svg");
 }
 
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h-100vh {
+  min-height: 100vh;
+}
+
 //CONTENT
+
 
 //4 cards
 //top icons
