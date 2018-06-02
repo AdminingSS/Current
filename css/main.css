@@ -54,6 +54,9 @@
 .h-100vh {
   min-height: 100vh; }
 
+.slider-head .slide-content {
+  padding: 100px 0; }
+
 .content-icon-top-1 {
   width: 50px;
   height: 50px; }
