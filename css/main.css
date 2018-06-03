@@ -61,17 +61,31 @@ body {
 
   .slick-prev {
     left: 25px; } }
-.nav-index {
+.tm-navbar-main {
   z-index: 100;
   position: absolute;
-  top: 0; }
+  top: 0;
+  width: 100%; }
 
 .navbar-toggler-icon {
   background-image: url("../img/toggler.svg"); }
 
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #555; }
+
 .tm-nav .nav-link:focus, .tm-nav .nav-link:hover {
   color: #c7b299; }
 
+@media (min-width: 992px) {
+  .navbar-collapse {
+    position: static;
+    padding: 0;
+    background-color: transparent; } }
 .slider-head .slide-content {
   padding: 100px 0; }
 

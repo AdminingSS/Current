@@ -98,14 +98,24 @@ body {
 
 //NAVBAR
 //Navbar over slider
-.nav-index {
+.tm-navbar-main {
   z-index: 100;
   position: absolute;
   top:0;
+  width: 100%;
 }
 //Navbar toggle button icon
 .navbar-toggler-icon {
   background-image: url("../img/toggler.svg");
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #555;
 }
 
 .tm-nav {
@@ -115,6 +125,15 @@ body {
     &:focus, &:hover {
       color: $textPrimaryColor;
     }
+  }
+}
+
+@media (min-width: 992px) {
+
+  .navbar-collapse {
+    position: static;
+    padding: 0;
+    background-color: transparent;
   }
 }
 
