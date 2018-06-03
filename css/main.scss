@@ -16,18 +16,55 @@
   top: 0;
 }
 
+.h-100vh {
+  min-height: 100vh;
+}
+
+.font-raleway {
+  font-family: $raleway;
+}
+
 .bg-cover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.h-100vh {
-  min-height: 100vh;
+body {
+  font-family: $montserrat;
+  font-size: $fontSizeMain;
 }
 
-body {
-  font: $fontSizeMain $montserrat;
+h2, h5 {
+  font-family: $raleway;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.btn {
+  font-family: $raleway;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: #998675;
+  box-shadow: inset 0px -3px 0 0 #736357;
+  padding: 6px 25px;
+  height: 53px;
+
+  &:hover, &:focus {
+    background-color: darken(#998675, 20%);
+    box-shadow: inset 0px -3px 0 0 darken(#736357, 20%);
+  }
 }
 
 
@@ -103,19 +140,19 @@ body {
   position: absolute;
   top:0;
   width: 100%;
+  font-size: 14px;
+
+  a {
+    color: #fff;
+  }
+
+  .navbar-brand {
+    font-size: 34px;
+  }
 }
 //Navbar toggle button icon
 .navbar-toggler-icon {
   background-image: url("../img/toggler.svg");
-}
-
-.navbar-collapse {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 10px 15px;
-  background-color: #555;
 }
 
 .tm-nav {
@@ -126,6 +163,19 @@ body {
       color: $textPrimaryColor;
     }
   }
+
+  .active > .nav-link {
+    color: $textPrimaryColor;
+  }
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #555;
 }
 
 @media (min-width: 992px) {
@@ -140,9 +190,14 @@ body {
 //CONTENT
 
 .slider-head {
+  color: #fff;
 
   .slide-content {
     padding: 100px 0;
+  }
+
+  .slider-btn {
+    margin-top: 50px;
   }
 }
 

@@ -6,16 +6,46 @@
 .t-0 {
   top: 0; }
 
+.h-100vh {
+  min-height: 100vh; }
+
+.font-raleway {
+  font-family: "Raleway", sans-serif; }
+
 .bg-cover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
-.h-100vh {
-  min-height: 100vh; }
-
 body {
-  font: 16px "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; }
+
+h2, h5 {
+  font-family: "Raleway", sans-serif; }
+
+h2 {
+  font-size: 52px;
+  font-weight: 700; }
+
+h5 {
+  font-size: 36px;
+  font-weight: 500; }
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: #998675;
+  box-shadow: inset 0px -3px 0 0 #736357;
+  padding: 6px 25px;
+  height: 53px; }
+  .btn:hover, .btn:focus {
+    background-color: #615347;
+    box-shadow: inset 0px -3px 0 0 #39312b; }
 
 .slick-next {
   right: 10px;
@@ -65,10 +95,20 @@ body {
   z-index: 100;
   position: absolute;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  font-size: 14px; }
+  .tm-navbar-main a {
+    color: #fff; }
+  .tm-navbar-main .navbar-brand {
+    font-size: 34px; }
 
 .navbar-toggler-icon {
   background-image: url("../img/toggler.svg"); }
+
+.tm-nav .nav-link:focus, .tm-nav .nav-link:hover {
+  color: #c7b299; }
+.tm-nav .active > .nav-link {
+  color: #c7b299; }
 
 .navbar-collapse {
   position: absolute;
@@ -78,16 +118,17 @@ body {
   padding: 10px 15px;
   background-color: #555; }
 
-.tm-nav .nav-link:focus, .tm-nav .nav-link:hover {
-  color: #c7b299; }
-
 @media (min-width: 992px) {
   .navbar-collapse {
     position: static;
     padding: 0;
     background-color: transparent; } }
-.slider-head .slide-content {
-  padding: 100px 0; }
+.slider-head {
+  color: #fff; }
+  .slider-head .slide-content {
+    padding: 100px 0; }
+  .slider-head .slider-btn {
+    margin-top: 50px; }
 
 .content-icon-top-1 {
   width: 50px;
