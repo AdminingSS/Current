@@ -1,3 +1,12 @@
+@import "variables";
+
+/*add fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Raleway:300,400,500,600,700');
+
+
+
+
 //GLOBAL
 
 .z-100 {
@@ -7,19 +16,67 @@
   top: 0;
 }
 
-//.test-bgi {
-////  background: url("../img/photo.jpg") no-repeat;
-////  background-size: cover;
-////  height: 600px;
-//  mix-blend-mode: multiply;
-//  background-color: #f4f5f8;
-//}
+.h-100vh {
+  min-height: 100vh;
+}
+
+.font-raleway {
+  font-family: $raleway;
+}
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  font-family: $montserrat;
+  font-size: $fontSizeMain;
+}
+
+h2, h5 {
+  font-family: $raleway;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.btn {
+  font-family: $raleway;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: #998675;
+  box-shadow: inset 0px -3px 0 0 #736357;
+  padding: 6px 25px;
+  height: 53px;
+
+  &:hover, &:focus {
+    background-color: darken(#998675, 20%);
+    box-shadow: inset 0px -3px 0 0 darken(#736357, 20%);
+  }
+}
+
+
 
 //SLIDER
 //Right arrow placement
 .slick-next {
-  right: 45px;
+  right: 10px;
   z-index: 1;
+  width: 40px;
+  height: 73px;
+
   //Right arrow tuning
   &::before {
     content: '';
@@ -31,9 +88,11 @@
 }
 //Left arrow placement
 .slick-prev {
-  left: 25px;
+  left: 10px;
   z-index: 1;
-  background-image: url('../img/left.svg');
+  width: 40px;
+  height: 73px;
+
   //Right arrow tuning
   &::before {
     content: '';
@@ -43,6 +102,7 @@
     height: 73px;
   }
 }
+
 //Dots placement
 .slick-dots {
   bottom: 25px;
@@ -63,19 +123,83 @@
   }
 }
 
+@media (min-width: 992px) {
+
+  .slick-next {
+    right: 25px;
+  }
+  .slick-prev {
+    left: 25px;
+  }
+}
+
 //NAVBAR
 //Navbar over slider
-.nav-index {
+.tm-navbar-main {
   z-index: 100;
   position: absolute;
   top:0;
+  width: 100%;
+  font-size: 14px;
+
+  a {
+    color: #fff;
+  }
+
+  .navbar-brand {
+    font-size: 34px;
+  }
 }
 //Navbar toggle button icon
 .navbar-toggler-icon {
   background-image: url("../img/toggler.svg");
 }
 
+.tm-nav {
+
+  .nav-link {
+
+    &:focus, &:hover {
+      color: $textPrimaryColor;
+    }
+  }
+
+  .active > .nav-link {
+    color: $textPrimaryColor;
+  }
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #555;
+}
+
+@media (min-width: 992px) {
+
+  .navbar-collapse {
+    position: static;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
 //CONTENT
+
+.slider-head {
+  color: #fff;
+
+  .slide-content {
+    padding: 100px 0;
+  }
+
+  .slider-btn {
+    margin-top: 50px;
+  }
+}
 
 //4 cards
 //top icons
@@ -102,7 +226,7 @@
     border: 1px solid #ebebeb;
     color: #8c8c8c;
 
-    font-family: Montserrat;
+    font-family: $montserrat;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -133,7 +257,7 @@
         color: #ffffff;
       }
       .card-text {
-        color: #c7b299;
+        color: $textPrimaryColor;
       }
 
     }
@@ -155,7 +279,7 @@
 
 #content-recent-posts {
   .card-title {
-    font-family: Raleway;
+    font-family: $raleway;
     font-size: 20px;
     font-weight: 500;
     font-style: normal;
@@ -166,7 +290,7 @@
     color: #555555;
   }
   .card-text {
-    font-family: Montserrat;
+    font-family: $montserrat;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -186,7 +310,7 @@
     .card-body {
       background-color: #362f2d;
       .card-title {
-        color: #c7b299;
+        color: $textPrimaryColor;
       }
       .card-text {
         color: #ffffff;
