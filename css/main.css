@@ -47,51 +47,6 @@ h5 {
     background-color: #615347;
     box-shadow: inset 0px -3px 0 0 #39312b; }
 
-.slick-next {
-  right: 25px;
-  z-index: 1;
-  width: 40px;
-  height: 73px; }
-  .slick-next::before {
-    content: '';
-    display: block;
-    background: url("../img/right.svg");
-    width: 40px;
-    height: 73px; }
-
-.slick-prev {
-  left: 25px;
-  z-index: 1;
-  width: 40px;
-  height: 73px; }
-  .slick-prev::before {
-    content: '';
-    display: block;
-    background: url("../img/left.svg");
-    width: 40px;
-    height: 73px; }
-
-.slick-dots {
-  bottom: 25px; }
-  .slick-dots li button:before {
-    line-height: 11px;
-    opacity: .75;
-    color: white; }
-  .slick-dots li.slick-active button:before {
-    content: '';
-    display: block;
-    background: url("../img/02.svg") no-repeat;
-    width: 15px;
-    height: 15px;
-    left: 3px; }
-
-.slider-head {
-  color: #fff; }
-  .slider-head .slide-content {
-    padding: 100px 0; }
-  .slider-head .slider-btn {
-    margin-top: 50px; }
-
 .tm-navbar-main {
   z-index: 100;
   position: absolute;
@@ -102,117 +57,265 @@ h5 {
     color: #fff; }
   .tm-navbar-main .navbar-brand {
     font-size: 34px; }
+  .tm-navbar-main .navbar-toggler-icon {
+    background-image: url("../img/toggler.svg"); }
+  .tm-navbar-main .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #555; }
+    .tm-navbar-main .navbar-collapse .tm-nav .nav-link:focus, .tm-navbar-main .navbar-collapse .tm-nav .nav-link:hover {
+      color: #c7b299; }
+    .tm-navbar-main .navbar-collapse .tm-nav .active > .nav-link {
+      color: #c7b299; }
+  @media (min-width: 992px) {
+    .tm-navbar-main .navbar-collapse {
+      position: static;
+      padding: 0;
+      background-color: transparent; } }
 
-.navbar-toggler-icon {
-  background-image: url("../img/toggler.svg"); }
+.slider-head {
+  color: #fff; }
+  .slider-head .slide-content {
+    padding: 100px 0; }
+  .slider-head .slider-btn {
+    margin-top: 50px; }
+  .slider-head .slick-next {
+    right: 25px;
+    z-index: 1;
+    width: 40px;
+    height: 73px; }
+    .slider-head .slick-next::before {
+      content: '';
+      display: block;
+      background: url("../img/right.svg");
+      width: 40px;
+      height: 73px; }
+  .slider-head .slick-prev {
+    left: 25px;
+    z-index: 1;
+    width: 40px;
+    height: 73px; }
+    .slider-head .slick-prev::before {
+      content: '';
+      display: block;
+      background: url("../img/left.svg");
+      width: 40px;
+      height: 73px; }
+  .slider-head .slick-dots {
+    bottom: 25px; }
+    .slider-head .slick-dots li button:before {
+      line-height: 11px;
+      opacity: .75;
+      color: white; }
+    .slider-head .slick-dots li.slick-active button:before {
+      content: '';
+      display: block;
+      background: url("../img/02.svg") no-repeat;
+      width: 15px;
+      height: 15px;
+      left: 3px; }
 
-.tm-nav .nav-link:focus, .tm-nav .nav-link:hover {
-  color: #c7b299; }
-.tm-nav .active > .nav-link {
-  color: #c7b299; }
-
-.navbar-collapse {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 10px 15px;
-  background-color: #555; }
-
-@media (min-width: 992px) {
-  .navbar-collapse {
-    position: static;
-    padding: 0;
-    background-color: transparent; } }
-.content-icon-top-1 {
+@media (max-width: 768px) {
+  .content-depts .card {
+    padding-top: 20px; } }
+.content-depts .card-img-top {
   width: 50px;
   height: 50px; }
-
-.content-icon-bottom-1 {
+.content-depts .card-img-bottom {
   width: 70px;
   height: 3px; }
-
-.something-gray {
-  background-color: #fbfaf8; }
-
-.dark-line {
-  background: url("../img/dark_line.svg"); }
-
-#pills-tab .nav-link {
-  border: 1px solid #ebebeb;
-  color: #8c8c8c;
-  font-family: "Montserrat", sans-serif;
+.content-depts .card-title {
+  white-space: nowrap;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #555555; }
+  .content-depts .card-title.active {
+    color: #c7b299; }
+.content-depts .card-text {
   font-size: 14px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center; }
-  #pills-tab .nav-link.active {
-    background-color: #998675;
-    color: #ffffff; }
+  color: #8c8c8c; }
 
-#pills-tabContent .card-body {
-  background-color: #fbfaf8; }
-#pills-tabContent .card:hover {
-  background: #000000; }
-  #pills-tabContent .card:hover img {
-    opacity: 0.5; }
-  #pills-tabContent .card:hover .card-body {
-    background-color: #362f2d; }
-    #pills-tabContent .card:hover .card-body .card-title {
-      color: #ffffff; }
-    #pills-tabContent .card:hover .card-body .card-text {
+.content-gray {
+  background-color: #fbfaf8;
+  font-size: 16px;
+  font-weight: 300;
+  color: #8c8c8c; }
+  .content-gray h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555; }
+
+.content-darkline {
+  background: url("../img/dark_line.svg");
+  font-size: 18px;
+  font-weight: 300;
+  color: #615855; }
+  .content-darkline h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #ffffff; }
+    .content-darkline h5 a {
       color: #c7b299; }
 
+.content-projects {
+  font-size: 16px;
+  font-weight: 300;
+  color: #8c8c8c; }
+  .content-projects h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555; }
+  .content-projects .nav-pills .nav-link {
+    border: 1px solid #ebebeb;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c8c8c; }
+    .content-projects .nav-pills .nav-link.active {
+      background-color: #998675;
+      color: #ffffff; }
+  .content-projects .tab-content .card-body {
+    background-color: #fbfaf8; }
+    .content-projects .tab-content .card-body .card-title {
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: left;
+      color: #c7b299; }
+    .content-projects .tab-content .card-body .card-text {
+      font-size: 14px;
+      font-weight: 300;
+      text-align: left;
+      color: #d1d1d1; }
+  .content-projects .tab-content .card:hover {
+    background: #000000; }
+    .content-projects .tab-content .card:hover img {
+      opacity: 0.5; }
+    .content-projects .tab-content .card:hover .card-body {
+      background-color: #362f2d; }
+      .content-projects .tab-content .card:hover .card-body .card-title {
+        color: #ffffff; }
+      .content-projects .tab-content .card:hover .card-body .card-text {
+        color: #c7b299; }
+
 .content-mobile {
-  background-color: #fbfaf8; }
+  background-color: #fbfaf8;
+  font-size: 16px;
+  font-weight: 300;
+  color: #8c8c8c; }
+  .content-mobile h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555; }
   .content-mobile ul {
     list-style-image: url("../img/li-marker-1.png"); }
 
 .content-counters {
-  background-image: linear-gradient(to right, #211b19, #4e3427); }
-
-#content-recent-posts .card-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #555555; }
-#content-recent-posts .card-text {
-  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(to right, #211b19, #4e3427);
   font-size: 14px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.57;
-  letter-spacing: normal;
-  text-align: left;
-  color: #8c8c8c; }
-#content-recent-posts .card:hover {
-  background: #000000; }
-  #content-recent-posts .card:hover img {
-    opacity: 0.5; }
-  #content-recent-posts .card:hover .card-body {
-    background-color: #362f2d; }
-    #content-recent-posts .card:hover .card-body .card-title {
-      color: #c7b299; }
-    #content-recent-posts .card:hover .card-body .card-text {
-      color: #ffffff; }
+  color: #c7b299;
+  white-space: nowrap; }
+  .content-counters h5 {
+    font-size: 48px;
+    font-weight: 200;
+    color: #ffffff; }
 
-.content-trademarks {
-  background-image: url("../img/trademarks-bg.jpg");
-  height: 489px; }
+.content-recent {
+  font-size: 16px;
+  font-weight: 300;
+  color: #8c8c8c; }
+  .content-recent h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555; }
+  .content-recent .card-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: #555555; }
+  .content-recent .card-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    color: #8c8c8c; }
+  .content-recent .card:hover {
+    background: #000000; }
+    .content-recent .card:hover img {
+      opacity: 0.5; }
+    .content-recent .card:hover .card-body {
+      background-color: #362f2d; }
+      .content-recent .card:hover .card-body .card-title {
+        color: #c7b299; }
+      .content-recent .card:hover .card-body .card-text {
+        color: #ffffff; }
 
 .footer-main {
-  background-color: #191919; }
+  background-color: #191919;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  color: #555555; }
+  .footer-main .logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    letter-spacing: -1.4px;
+    color: #ffffff; }
+  .footer-main h1 {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    color: #363636; }
+  .footer-main h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff; }
+  .footer-main a {
+    color: #00bff3; }
+    .footer-main a.link-more {
+      font-size: 14px;
+      font-weight: normal;
+      text-align: left;
+      color: #d1d1d1; }
+      .footer-main a.link-more:hover {
+        color: white; }
+    .footer-main a.link-alt {
+      color: #959595; }
+      .footer-main a.link-alt:hover {
+        color: gray; }
+  .footer-main .footer-main-highlight div:hover {
+    color: #c7b299; }
+    .footer-main .footer-main-highlight div:hover h1 {
+      color: #ffffff; }
 
-.footer-footer {
-  background-color: #111111; }
+.footer-basement {
+  background-color: #111111;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  color: #555555; }
+  .footer-basement a {
+    color: #555555; }
+    .footer-basement a:hover {
+      color: #c7b299; }
+    .footer-basement a.link-alt {
+      color: #959595; }
+      .footer-basement a.link-alt:hover {
+        color: gray; }
 
 /*# sourceMappingURL=main.css.map */

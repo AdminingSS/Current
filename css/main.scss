@@ -5,8 +5,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Raleway:300,400,500,600,700');
 
 
-
-
 //GLOBAL
 
 .z-100 {
@@ -51,7 +49,7 @@ h5 {
 
 .btn {
   font-family: $raleway;
-  font-size: 14px;
+  font-size: $fontSizeSmall;
   font-weight: 700;
   color: #fff;
   border: none;
@@ -67,62 +65,61 @@ h5 {
   }
 }
 
+//NAVBAR
+.tm-navbar-main {
+  z-index: 100;
+  position: absolute;
+  top:0;
+  width: 100%;
+  font-size: $fontSizeSmall;
 
+  a {
+    color: #fff;
+  }
+
+  .navbar-brand {
+    font-size: 34px;
+  }
+
+  //Toggle button icon
+  .navbar-toggler-icon {
+    background-image: url("../img/toggler.svg");
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #555;
+
+    .tm-nav {
+
+      .nav-link {
+
+        &:focus, &:hover {
+          color: $textPrimaryColor;
+        }
+      }
+
+      .active > .nav-link {
+        color: $textPrimaryColor;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+
+    .navbar-collapse {
+      position: static;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+}
 
 //SLIDER
-//Right arrow placement
-.slick-next {
-  right: 25px;
-  z-index: 1;
-  width: 40px;
-  height: 73px;
-
-  //Right arrow tuning
-  &::before {
-    content: '';
-    display: block;
-    background: url("../img/right.svg");
-    width: 40px;
-    height: 73px;
-  }
-}
-//Left arrow placement
-.slick-prev {
-  left: 25px;
-  z-index: 1;
-  width: 40px;
-  height: 73px;
-
-  //Right arrow tuning
-  &::before {
-    content: '';
-    display: block;
-    background: url("../img/left.svg");
-    width: 40px;
-    height: 73px;
-  }
-}
-
-//Dots placement
-.slick-dots {
-  bottom: 25px;
-  //Dots coloring, centering and opacity
-  li button:before {
-    line-height: 11px;
-    opacity: .75;
-    color: white;
-  }
-  //Active dot tuning
-  li.slick-active button:before {
-    content: '';
-    display: block;
-    background: url("../img/02.svg") no-repeat;
-    width: 15px;
-    height: 15px;
-    left: 3px;
-  }
-}
-
 .slider-head {
   color: #fff;
 
@@ -133,130 +130,218 @@ h5 {
   .slider-btn {
     margin-top: 50px;
   }
-}
 
-//NAVBAR
-//Navbar over slider
-.tm-navbar-main {
-  z-index: 100;
-  position: absolute;
-  top:0;
-  width: 100%;
-  font-size: 14px;
+  //Right arrow
+  .slick-next {
+    right: 25px;
+    z-index: 1;
+    width: 40px;
+    height: 73px;
 
-  a {
-    color: #fff;
-  }
-
-  .navbar-brand {
-    font-size: 34px;
-  }
-}
-//Navbar toggle button icon
-.navbar-toggler-icon {
-  background-image: url("../img/toggler.svg");
-}
-
-.tm-nav {
-
-  .nav-link {
-
-    &:focus, &:hover {
-      color: $textPrimaryColor;
+    &::before {
+      content: '';
+      display: block;
+      background: url("../img/right.svg");
+      width: 40px;
+      height: 73px;
     }
   }
+  //Left arrow
+  .slick-prev {
+    left: 25px;
+    z-index: 1;
+    width: 40px;
+    height: 73px;
 
-  .active > .nav-link {
-    color: $textPrimaryColor;
+    &::before {
+      content: '';
+      display: block;
+      background: url("../img/left.svg");
+      width: 40px;
+      height: 73px;
+    }
   }
-}
+  //Dots
+  .slick-dots {
+    bottom: 25px;
 
-.navbar-collapse {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 10px 15px;
-  background-color: #555;
-}
+    li button:before {
+      line-height: 11px;
+      opacity: .75;
+      color: white;
+    }
 
-@media (min-width: 992px) {
-
-  .navbar-collapse {
-    position: static;
-    padding: 0;
-    background-color: transparent;
+    li.slick-active button:before {
+      content: '';
+      display: block;
+      background: url("../img/02.svg") no-repeat;
+      width: 15px;
+      height: 15px;
+      left: 3px;
+    }
   }
 }
 
 //CONTENT
 
 //4 cards
-//top icons
-.content-icon-top-1 {
-  width: 50px;
-  height: 50px;
-}
-//bottom icons (lines)
-.content-icon-bottom-1 {
-  width: 70px;
-  height: 3px;
-}
+.content-depts {
 
-//Gray zone with slider?
-.something-gray {
-  background-color: #fbfaf8;
-}
-//Dark line 1 background
-.dark-line {
-  background: url("../img/dark_line.svg");
-}
-#pills-tab {
-  .nav-link {
-    border: 1px solid #ebebeb;
-    color: #8c8c8c;
+  @media (max-width: 768px) {
 
-    font-family: $montserrat;
-    font-size: 14px;
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
+    .card {
+      padding-top: 20px;
+    }
+  }
+
+  .card-img-top {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-img-bottom {
+    width: 70px;
+    height: 3px;
+  }
+
+  .card-title {
+    white-space: nowrap;
+    font-family: $raleway;
+    font-size: 22px;
+    font-weight: 600;
+    color: #555555;
 
     &.active {
-      background-color: #998675;
-      color: #ffffff;
+      color: $textPrimaryColor
+    }
+  }
+
+  .card-text {
+    font-size: $fontSizeSmall;
+    font-weight: 300;
+    color: #8c8c8c;
+  }
+}
+
+
+//Gray zone
+.content-gray {
+  background-color: #fbfaf8;
+  font-size: $fontSizeMain;
+  font-weight: 300;
+  color: #8c8c8c;
+
+  h5 {
+    font-family: $raleway;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
+  }
+}
+
+
+
+
+//Dark line 1 background
+.content-darkline {
+  background: url("../img/dark_line.svg");
+  font-size: 18px;
+  font-weight: 300;
+  color: #615855;
+
+  h5 {
+    font-family: $raleway;
+    font-size: 28px;
+    font-weight: normal;
+    color: #ffffff;
+
+    a {
+      color: $textPrimaryColor;
     }
   }
 }
 
-#pills-tabContent {
-  .card-body {
-    background-color: #fbfaf8;
+.content-projects {
+  font-size: $fontSizeMain;
+  font-weight: 300;
+  color: #8c8c8c;
+
+  h5 {
+    font-family: $raleway;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
   }
-  .card:hover {
-      background: #000000;
-      img {
-        opacity: 0.5;
-      }
-    .card-body {
-      background-color: #362f2d;
-      .card-title {
+
+  .nav-pills {
+    .nav-link {
+      border: 1px solid #ebebeb;
+      font-family: $montserrat;
+      font-size: 14px;
+      font-weight: 300;
+      color: #8c8c8c;
+
+      &.active {
+        background-color: #998675;
         color: #ffffff;
       }
-      .card-text {
+    }
+  }
+
+  .tab-content {
+    .card-body {
+      background-color: #fbfaf8;
+
+      .card-title {
+        font-family: $raleway;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: left;
         color: $textPrimaryColor;
       }
 
+      .card-text {
+        font-size: $fontSizeSmall;
+        font-weight: 300;
+        text-align: left;
+        color: #d1d1d1;
+      }
+    }
+
+    .card:hover {
+      background: #000000;
+
+      img {
+        opacity: 0.5;
+      }
+
+      .card-body {
+        background-color: #362f2d;
+
+        .card-title {
+          color: #ffffff;
+        }
+
+        .card-text {
+          color: $textPrimaryColor;
+        }
+      }
     }
   }
 }
 
-
 .content-mobile {
   background-color: #fbfaf8;
+  font-size: $fontSizeMain;
+  font-weight: 300;
+  color: #8c8c8c;
+
+  h5 {
+    font-family: $raleway;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
+  }
 
   ul {
     list-style-image: url("../img/li-marker-1.png");
@@ -265,43 +350,60 @@ h5 {
 
 .content-counters {
   background-image: linear-gradient(to right, #211b19, #4e3427);
+  font-size: $fontSizeSmall;
+  font-weight: 300;
+  color: $textPrimaryColor;
+  white-space: nowrap;
+
+  h5 {
+    font-size: 48px;
+    font-weight: 200;
+    color: #ffffff;
+  }
 }
 
-#content-recent-posts {
+.content-recent {
+  font-size: $fontSizeMain;
+  font-weight: 300;
+  color: #8c8c8c;
+
+  h5 {
+    font-family: $raleway;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
+  }
+
   .card-title {
     font-family: $raleway;
     font-size: 20px;
     font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #555555;
   }
+
   .card-text {
     font-family: $montserrat;
-    font-size: 14px;
+    font-size: $fontSizeSmall;
     font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.57;
-    letter-spacing: normal;
     text-align: left;
     color: #8c8c8c;
   }
 
   .card:hover {
     background: #000000;
+
     img {
       opacity: 0.5;
     }
 
     .card-body {
       background-color: #362f2d;
+
       .card-title {
         color: $textPrimaryColor;
       }
+
       .card-text {
         color: #ffffff;
       }
@@ -309,15 +411,93 @@ h5 {
   }
 }
 
-.content-trademarks {
-  background-image: url("../img/trademarks-bg.jpg");
-  height: 489px;
-}
+//.content-trademarks {
+//  background-image: url("../img/trademarks-bg.jpg");
+//  height: 489px;
+//}
 
 .footer-main {
   background-color: #191919;
+  font-size: $fontSizeSmall;
+  font-weight: 300;
+  text-align: left;
+  color: #555555;
+
+  .logo {
+    font-family: $raleway;
+    font-size: 34px;
+    font-weight: normal;
+    letter-spacing: -1.4px;
+    color: #ffffff;
+  }
+
+  h1 {
+    font-size: $fontSizeTiny;
+    font-weight: 300;
+    text-align: left;
+    color: #363636;
+  }
+
+  h5 {
+    font-family: $raleway;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  a {
+    color: #00bff3;
+
+    &.link-more {
+      font-size: $fontSizeSmall;
+      font-weight: normal;
+      text-align: left;
+      color: #d1d1d1;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &.link-alt {
+      color: #959595;
+
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+
+  .footer-main-highlight div:hover {
+    color: $textPrimaryColor;
+
+    h1 {
+      color: #ffffff;
+    }
+  }
 }
 
-.footer-footer {
+.footer-basement {
   background-color: #111111;
+  font-size: $fontSizeSmall;
+  font-weight: 300;
+  text-align: left;
+  color: #555555;
+
+  a {
+    color: #555555;
+
+    &:hover {
+      color: $textPrimaryColor;
+    }
+
+    &.link-alt {
+      color: #959595;
+
+      &:hover {
+        color: gray;
+      }
+    }
+  }
 }
