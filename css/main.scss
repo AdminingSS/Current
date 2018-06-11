@@ -419,10 +419,21 @@ h5 {
   }
 }
 
-//.content-trademarks {
-//  background-image: url("../img/trademarks-bg.jpg");
-//  height: 489px;
-//}
+.content-trademarks {
+  background-image: url("../img/trademarks-bg.jpg");
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .5;
+  }
+}
 
 .footer-main {
   background-color: #191919;
