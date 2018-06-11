@@ -7,6 +7,12 @@
 
 //GLOBAL
 
+//@media (min-width: 3000px) {
+//  .container {
+//    max-width: 2900px;
+//  }
+//}
+
 .z-100 {
   z-index: 100;
 }
@@ -244,7 +250,9 @@ h5 {
 
 //Dark line 1 background
 .content-darkline {
-  background: url("../img/dark_line.svg");
+  background: url("../img/dark_line.svg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
   font-size: 18px;
   font-weight: 300;
   color: #615855;
@@ -500,4 +508,23 @@ h5 {
       }
     }
   }
+}
+
+#toTop {
+  width: 100px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(50, 50, 50, 0.3);
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px; /* отступ кнопки от нижнего края страницы*/
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
 }
