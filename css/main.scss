@@ -534,20 +534,20 @@ h5 {
 }
 
 #toTop {
-  width: 100px;
+  //width: 100px;
   //border: 1px solid #ccc;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  //-webkit-border-radius: 5px;
+  //-moz-border-radius: 5px;
   border-radius: 5px;
   background: rgba(50, 50, 50, 0.3);
-  text-align: center;
-  padding: 5px;
+  //text-align: center;
+  padding: 10px;
   position: fixed;
   bottom: 10px; /* отступ кнопки от нижнего края страницы*/
   right: 10px;
   cursor: pointer;
   display: none;
   color: #eee;
-  font-family: Roboto, sans-serif;
-  font-size: 11px;
+  //font-family: Roboto, sans-serif;
+  //font-size: 11px;
 }
