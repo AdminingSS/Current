@@ -185,22 +185,28 @@ h5 {
     .content-projects .nav-pills .nav-link.active {
       background-color: #998675;
       color: #ffffff; }
-  .content-projects .tab-content .card-body {
-    background-color: #fbfaf8; }
-    .content-projects .tab-content .card-body .card-title {
-      font-family: "Raleway", sans-serif;
-      font-size: 20px;
-      font-weight: 500;
-      text-align: left;
-      color: #c7b299; }
-    .content-projects .tab-content .card-body .card-text {
-      font-size: 14px;
-      font-weight: 300;
-      text-align: left;
-      color: #d1d1d1; }
+  .content-projects .tab-content .card {
+    position: relative; }
+    .content-projects .tab-content .card .card-body {
+      background-color: #fbfaf8; }
+      .content-projects .tab-content .card .card-body .card-title {
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: left;
+        color: #c7b299; }
+      .content-projects .tab-content .card .card-body .card-text {
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+        color: #d1d1d1; }
+    .content-projects .tab-content .card .hover-links {
+      position: absolute;
+      display: none;
+      top: 25%; }
   .content-projects .tab-content .card:hover {
     background: #000000; }
-    .content-projects .tab-content .card:hover img {
+    .content-projects .tab-content .card:hover .card-img-top {
       opacity: 0.5; }
     .content-projects .tab-content .card:hover .card-body {
       background-color: #362f2d; }
@@ -208,6 +214,10 @@ h5 {
         color: #ffffff; }
       .content-projects .tab-content .card:hover .card-body .card-text {
         color: #c7b299; }
+    .content-projects .tab-content .card:hover .hover-links {
+      display: block; }
+      .content-projects .tab-content .card:hover .hover-links img {
+        padding: 10px; }
 
 .content-mobile {
   background-color: #fbfaf8;
@@ -336,7 +346,6 @@ h5 {
 
 #toTop {
   width: 100px;
-  border: 1px solid #ccc;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -349,7 +358,7 @@ h5 {
   right: 10px;
   cursor: pointer;
   display: none;
-  color: #fff;
+  color: #eee;
   font-family: Roboto, sans-serif;
   font-size: 11px; }
 
