@@ -265,7 +265,10 @@ h5 {
     text-align: left;
     color: #8c8c8c; }
   .content-recent .card:hover {
-    background: #000000; }
+    background: #000000;
+    cursor: pointer; }
+    .content-recent .card:hover a {
+      text-decoration: none; }
     .content-recent .card:hover img {
       opacity: 0.5; }
     .content-recent .card:hover .card-body {
@@ -325,9 +328,12 @@ h5 {
       .footer-main a.link-alt:hover {
         color: gray; }
   .footer-main .footer-main-highlight div:hover {
-    color: #c7b299; }
+    color: #c7b299;
+    cursor: pointer; }
     .footer-main .footer-main-highlight div:hover h1 {
       color: #ffffff; }
+    .footer-main .footer-main-highlight div:hover p {
+      color: #c7b299; }
 
 .footer-basement {
   background-color: #111111;

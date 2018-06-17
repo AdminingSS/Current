@@ -412,6 +412,11 @@ h5 {
 
   .card:hover {
     background: #000000;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+    }
 
     img {
       opacity: 0.5;
@@ -502,10 +507,16 @@ h5 {
 
   .footer-main-highlight div:hover {
     color: $textPrimaryColor;
+    cursor: pointer;
 
     h1 {
       color: #ffffff;
     }
+
+    p {
+      color: $textPrimaryColor;
+    }
+
   }
 }
 
