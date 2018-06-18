@@ -53,4 +53,20 @@ $(document).ready(function () {
         });
     })();
 
+    //fixedNavbar
+    (function () {
+
+        const navbarSelector = $(".tm-navbar-main");
+        const initialNavTop = navbarSelector.offset().top;
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= initialNavTop) {
+                navbarSelector.addClass("fixedNav");
+            } else {
+                navbarSelector.removeClass("fixedNav");
+            }
+        });
+
+    })();
+
 });

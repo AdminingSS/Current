@@ -73,7 +73,7 @@ h5 {
 .tm-navbar-main {
   z-index: 100;
   position: absolute;
-  top: 0;
+  top: 50px;
   width: 100%;
   font-size: $fontSizeSmall;
 
@@ -121,6 +121,11 @@ h5 {
       background-color: transparent;
     }
   }
+}
+.fixedNav {
+  position: fixed;
+  top: 0;
+  background-color: rgba(50,50,50,0.3);
 }
 
 //SLIDER
