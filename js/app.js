@@ -16,8 +16,8 @@ $(document).ready(function () {
         $mainSlider.slick(options);
     })();
 
-    //Кнопка Наверх
-    $(function () {
+    //toTop button
+    (function () {
         const optionToTopBtn = 2;
         const showToTopBtnOn = document.documentElement.clientHeight * optionToTopBtn;
 
@@ -33,6 +33,24 @@ $(document).ready(function () {
             $('body,html').animate({scrollTop: 0}, 800);
         });
 
-    });
+    })();
+
+    //loadMore button
+    (function () {
+        const contentSelector = "#loadMoreDivs .card";
+        const buttonSelector = "#loadMore";
+
+        $(contentSelector).slice(0, 6).show();
+        $(buttonSelector).on('click', function (e) {
+            e.preventDefault();
+            $(contentSelector + ":hidden").slice(0, 6).slideDown();
+            if ($(contentSelector + ":hidden").length === 0) {
+                $(buttonSelector).fadeOut('slow');
+            }
+            // $('html,body').animate({
+            //     scrollTop: $(this).offset().top
+            // }, 1500);
+        });
+    })();
 
 });

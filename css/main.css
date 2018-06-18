@@ -186,7 +186,8 @@ h5 {
       background-color: #998675;
       color: #ffffff; }
   .content-projects .tab-content .card {
-    position: relative; }
+    position: relative;
+    display: none; }
     .content-projects .tab-content .card .card-body {
       background-color: #fbfaf8; }
       .content-projects .tab-content .card .card-body .card-title {
