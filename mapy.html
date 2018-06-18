@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <title>Карты</title>
 
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
     <style>
-        #map {
+        #mapG {
             width: 100%;
             height: 100vh;
             /*min-height: 200px;*/
             max-width: 800px;
             max-height: 800px;
         }
+        #mapR {
+            width: 100%;
+            height: 100vh;
+            /*min-height: 200px;*/
+            max-width: 800px;
+            max-height: 800px;
+        }
+
     </style>
 
 </head>
 <body>
 
-<h3>My Google Maps Demo</h3>
-<div id="map"></div>
+<div id="mapG"></div>
+<div id="mapR"></div>
 
 <script>
     function initMap() {
         const redSquare = {lat: 55.7546949, lng: 37.6178303};
-        const map = new google.maps.Map(document.getElementById('map'), {
+        const map = new google.maps.Map(document.getElementById('mapG'), {
             zoom: 7,
             center: redSquare
         });
@@ -35,9 +44,28 @@
     }
 </script>
 
+<script>
+    ymaps.ready(function () {
+        const myMap = new ymaps.Map('mapR', {
+                center: [55.7546949, 37.6178303],
+                zoom: 7
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+        myMap.geoObjects.add(new ymaps.Placemark([55.7546949, 37.6178303], {
+            balloonContent: ''
+        }, {
+            preset: 'islands#icon',
+            iconColor: 'red'
+        }));
+    });
+</script>
+
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyIx-bARl0FA6G9Mk1jt16rIpSu0aC6rU&callback=initMap">
 </script>
+
 
 <!--key=AIzaSyBFDAIGmPW5J0sRKtvB7QUutgpxPRX_Xek" -->
 </body>
