@@ -37,33 +37,29 @@ $(document).ready(function () {
 
     //loadMore button
     (function () {
-        const contentSelector = "#loadMoreDivs .card";
-        const buttonSelector = "#loadMore";
+        const $content = $('#loadMoreDivs .card');
+        const $button = $('#loadMore');
 
-        $(contentSelector).slice(0, 6).show();
-        $(buttonSelector).on('click', function (e) {
+        $content.slice(0, 6).show();
+        $button.on('click', function (e) {
             e.preventDefault();
-            $(contentSelector + ":hidden").slice(0, 6).slideDown();
-            if ($(contentSelector + ":hidden").length === 0) {
-                $(buttonSelector).fadeOut('slow');
+            $content.filter(':hidden').slice(0, 6).slideDown();
+            if ($content.filter(':hidden').length === 0) {
+                $button.fadeOut('slow');
             }
-            // $('html,body').animate({
-            //     scrollTop: $(this).offset().top
-            // }, 1500);
         });
     })();
 
     //fixedNavbar
     (function () {
+        const $navbar = $(".tm-navbar-main");
+        const initialNavTop = $navbar.offset().top;
 
-        const navbarSelector = $(".tm-navbar-main");
-        const initialNavTop = navbarSelector.offset().top;
-
-        $(window).scroll(function () {
+        $(window).on('scroll', function () {
             if ($(this).scrollTop() >= initialNavTop) {
-                navbarSelector.addClass("fixedNav");
+                $navbar.addClass("fixedNav");
             } else {
-                navbarSelector.removeClass("fixedNav");
+                $navbar.removeClass("fixedNav");
             }
         });
 
